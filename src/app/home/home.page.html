@@ -1,4 +1,4 @@
-<ion-header>
+<ion-header class="back">
   <ion-img class="logo" src="/assets/icon/nikeLogo.svg"/>
 </ion-header>
 
@@ -10,15 +10,15 @@
     <div class="subtitle1">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae porta ante. Suspendisse a massa vitae justo lacinia accumsan.</p>
     </div>
-
     <div class="button-container">
-      <ion-button class="button" size="large" shape="round" color="warning"   (click)="proxpage2()">
+      <ion-button class="button1" size="large" fill="clear" (click)="proxpage2()">
         <span class="button-text">GET STARTED</span>
         <ion-icon class="icon" name="arrow-forward"></ion-icon>
       </ion-button>
     </div>
-    
-
+    <ion-refresher slot="fixed" [pullFactor]="0.5" [pullMin]="100" [pullMax]="200" (ionRefresh)="handleRefresh($event)">
+      <ion-refresher-content></ion-refresher-content>
+    </ion-refresher>
 </ion-content>
 
 <ion-footer>

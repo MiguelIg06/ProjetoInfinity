@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from '@ionic/angular';
+import { IonRefresher, NavController } from '@ionic/angular';
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
@@ -14,4 +14,9 @@ export class HomePage {
      this.nav.navigateForward('page2');
   }
 
+  handleRefresh(event: CustomEvent) {
+    setTimeout(() => {
+      event.detail.complete(); 
+    }, 2000);
+  }
 }

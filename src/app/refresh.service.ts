@@ -1,21 +1,17 @@
-// refresh.service.ts
-
 import { Injectable } from '@angular/core';
+import { Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class RefreshService {
+  private refreshSubject = new Subject<void>();
 
-  constructor() { }
+  get onRefresh() {
+    return this.refreshSubject.asObservable();
+  }
 
-  triggerRefresh(): Promise<void> {
-    // Simular uma operação de atualização assíncrona
-    return new Promise<void>((resolve, reject) => {
-      setTimeout(() => {
-        console.log('Refresh complete');
-        resolve();
-      }, 2000); // Tempo de espera simulado de 2 segundos
-    });
+  triggerRefresh() {
+    this.refreshSubject.next();
   }
 }

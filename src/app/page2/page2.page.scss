@@ -1,0 +1,64 @@
+
+ion-content{
+    --ion-background-color: #f0f0f0; 
+  }
+
+  ion-grid {
+    position: flex;
+    padding: 20px;
+    margin-top: 5%;
+  }
+
+  ion-col {
+    border-radius: 20px;
+    margin-right: 3%;
+  }
+
+  ion-row{
+    width: 10cm;
+    height: 3cm;
+  }
+
+  .tenisd{
+    background-color: #fcf860;
+  }
+
+  .tenise{
+   background-color: #e8e4e4;
+  }
+
+  .tenism{
+    background-color: #e8e4e4;
+  }
+
+  //.test{
+   // width: 6cm;
+   // height: 3cm;
+ // }
+
+ .menu{
+
+    display: flex;
+    width: 50px;
+    height: 50px;
+    margin-top: -18%;
+   margin-left: 30px;
+ }
+
+ .nikel{
+    display: flex;
+    margin-left: 40%;
+    width: 90px;
+    height: 90px;
+    margin-top: 10px;
+ }
+
+ .small-avatar {
+    position: relative;
+    width: 45px;
+    height: 45px;
+    margin-left: 82%;
+    margin-top: -40px;
+  }
+  
+  

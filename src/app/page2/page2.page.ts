@@ -9,6 +9,12 @@ export class Page2Page implements OnInit {
 
   constructor() { }
 
+  handleRefresh(event: CustomEvent) {
+    setTimeout(() => {
+      event.detail.complete(); 
+    }, 2000);
+    
+  }
   ngOnInit() {
   }
 

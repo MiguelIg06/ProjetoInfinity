@@ -1,30 +1,48 @@
-<ion-header>
+<ion-header translucent="true">
 </ion-header>
 
 <ion-content [fullscreen]="true" class="back">
-  <ion-img class="nikel" src="/assets/icon/nike.png"></ion-img>
-  <ion-img class="menu" src="/assets/icon/menu (1) 1.png"></ion-img>
-  <ion-avatar class="small-avatar">
-    <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
-  </ion-avatar>
-  <ion-grid>
-    <ion-row>
-      <ion-col class="tenisd">
-        <ion-img  src="/assets/tenisd.png" ></ion-img>
-      </ion-col>
-      <ion-col class="tenism">
-        <ion-img class="test"  src="/assets/tenism.png"></ion-img>
-      </ion-col>
-      <ion-col class="tenise">
-        <ion-img  class="test" src="/assets/tenise.png"></ion-img>
+  <div class="topo">
+    <ion-img class="nikel" src="/assets/icon/nike.png"></ion-img>
+    <ion-img class="menu" src="/assets/icon/menu (1) 1.png"></ion-img>
+    <ion-avatar class="small-avatar">
+      <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+      </ion-avatar>
+      </div>
+      <div class="grid">
+        <ion-grid>
+          <ion-row > 
+            <ion-col class="tenisd">
+              <ion-img class="img3" src="/assets/img1.png" ></ion-img>
+              </ion-col>
+              <ion-col class="tenism">
+                <ion-img class="test"  src="/assets/tenism.png"></ion-img>
+                </ion-col>
+                <ion-col class="tenise">
+                  <ion-img  class="test" src="/assets/tenise.png"></ion-img>
       </ion-col>
     </ion-row>
-    <ion-img class="test"  src="/assets/imgc.png"></ion-img>
-  </ion-grid>
-  <h1 class="title1">KYRIE IRVING</h1>
-  <P>Calçados para basquete</P>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae porta ante. Suspendisse a massa vitae justo lacinia accumsan.</p>
-  <ion-refresher slot="fixed" [pullFactor]="0.5" [pullMin]="100" [pullMax]="200" (ionRefresh)="handleRefresh($event)">
+    </ion-grid>
+    </div>
+    <ion-img class="imgcenter"  src="/assets/img1.png"></ion-img>
+    <div class="texto">
+      <h1 class="title1">KYRIE IRVING</h1>
+      <P class="sub1">Calçados para Basquete</P>
+      <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae porta ante. Suspendisse a massa vitae justo lacinia accumsan.</p>
+      <p class="preco">Preço</p>
+      <p class="valor" >$ 799</p>
+</div>
+
+  <ion-refresher force-overscroll="true" slot="fixed" [pullFactor]="0.5" [pullMin]="100" [pullMax]="200" (ionRefresh)="handleRefresh($event)">
     <ion-refresher-content></ion-refresher-content>
   </ion-refresher>
+
+   <ion-button  size="large"  class="share" shape="round">
+     <ion-img src="/assets/icon/share 1.png"></ion-img>
+    </ion-button>
+  <ion-button class="bag" size="large" shape="round">
+    <ion-img src="/assets/icon/shopping-bag 1.png"></ion-img>
+  </ion-button>
+
+
 </ion-content>

@@ -4,40 +4,49 @@ ion-content{
   }
 
   ion-grid {
-    position: flex;
+    position: static;
     padding: 20px;
     margin-top: 5%;
+    
   }
 
   ion-col {
     border-radius: 20px;
-    margin-right: 3%;
+    height: 120px;
+    width: 50px;
+    margin-left: 7%;
+  
   }
 
   ion-row{
+    height: 1cm;
     width: 10cm;
-    height: 3cm;
+  
+    
   }
 
+//
   .tenisd{
-    background-color: #fcf860;
+    background-color: #f5ed0a;
+    margin-left: -10px;
   }
 
   .tenise{
-   background-color: #e8e4e4;
+   background-color: #d1d1d1;
+   
   }
 
   .tenism{
-    background-color: #e8e4e4;
+    background-color: #d1d1d1;
+
   }
 
-  //.test{
-   // width: 6cm;
-   // height: 3cm;
- // }
+  .test{
+    width: 110px;
+    height: 120px;
+  }
 
  .menu{
-
     display: flex;
     width: 50px;
     height: 50px;
@@ -61,4 +70,81 @@ ion-content{
     margin-top: -40px;
   }
   
+  .title1{
+    font-family: "Holtwood One Sc", serif;
+    font-size: 38px;
+    position: static;
+    margin-top: 1px;
+    margin-left: 30px;
+    color: #144273;
+  }
   
+  .sub1{
+    font-family: "inter";
+    font-size: 23px;
+    position: static;
+    margin-top: 1px;
+    margin-left: 30px;
+    color: #144273;
+  }
+
+  .desc{
+    position: static;
+    color: #144273;
+    margin-left: 30px;
+    font-family: "Poppins";
+  }
+
+  .preco{
+    position: relative;
+    color: #144273;
+    font-family: "Kanit";
+    font-size: 30px;
+    margin-left: 30px;
+    margin-bottom: 50px;
+  }
+
+  .valor{
+    position: relative;
+    color: #144273;
+    font-family: "Holtwood One Sc", serif;
+    font-size: 35px;
+    margin-top: -50px;
+    margin-left: 30px;
+
+  }
+
+  .img3{
+    width: 110px;
+    height: 120px;
+  }
+
+  .imgcenter{
+      width: 370px;
+      height: 270px;
+      margin-top: 15%;
+  }
+
+  // .share{
+   // background-color: black;
+ // }
+
+  //.bag{
+   // background-color: black;
+  //} 
+
+//.btnbag{
+ // height: 40px;
+  //width: 40px;
+  //margin-top: -10%;
+//}
+
+.bag{
+  margin-left: 75%;
+  margin-top: -50%;
+}
+
+.share{
+  margin-left: 50%;
+  margin-top: -40%;
+}
